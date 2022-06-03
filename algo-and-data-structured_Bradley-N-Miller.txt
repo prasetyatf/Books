@@ -30,3 +30,4 @@ plot of common big-O functions: constant, log, linear, log linear, quadratic, cu
 change coding to big-O function.
 one problem may have more than one solution. we can calculacte which is efficient(time execution and memory). example: an anagram detection example(problem), checking off(solution 1), sort and compare(solution 2), brute force(solution 3), count and compare(solution 4).
 big-O efficiency example: pop() = O(1) which is constant. pop(i) = O(n) which is linear.
+each operation in object has big-O efficiency.
