@@ -28,3 +28,5 @@ use time or timeit module.
 sometimes the performance of an algorithm depends on the exact values of the data rather than simply the size of the problem.
 plot of common big-O functions: constant, log, linear, log linear, quadratic, cubic, exponential(1, log n, n, n log n, n**2, n**3, 2n)
 change coding to big-O function.
+one problem may have more than one solution. we can calculacte which is efficient(time execution and memory). example: an anagram detection example(problem), checking off(solution 1), sort and compare(solution 2), brute force(solution 3), count and compare(solution 4).
+big-O efficiency example: pop() = O(1) which is constant. pop(i) = O(n) which is linear.
