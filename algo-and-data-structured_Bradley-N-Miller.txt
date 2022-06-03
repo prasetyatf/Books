@@ -20,3 +20,11 @@ set. <= ask whether all elements of the first set not in second.
 print(aku adalah,sep="++", end="++")
 print("aku adalah %s" % (var)). %=format operator s=collection of value. (var) bisa diganti tuple atau dictionary.
 modifier: (-,+,0,.). contoh: %-20d, %20.2f
+
+2. Algorithm Analysis
+the amount of space or memory. execution time.
+Bog O notation
+use time or timeit module.
+sometimes the performance of an algorithm depends on the exact values of the data rather than simply the size of the problem.
+plot of common big-O functions: constant, log, linear, log linear, quadratic, cubic, exponential(1, log n, n, n log n, n**2, n**3, 2n)
+change coding to big-O function.
