@@ -1,0 +1,10 @@
+title: Problem Solving With Algorithms and Data Structure
+Writers: Bradley N. Miller, David L. Ranum
+
+1. Introduction
+What is Computer Science
+Ilmu Komputer adalah studi tentang masalah, pemecahan masalah, solusi dan masalah tanpa solusi.
+Algoritma adalah pemecahan masalah dengan langkah terbatas.
+Computable adalah jika masalah memiliki algoritma.
+Interface adalah tampilan fungsi untuk mencapai tujuan.
+Client vs Engineer
