@@ -1,5 +1,6 @@
 title: Problem Solving With Algorithms and Data Structure
 Writers: Bradley N. Miller, David L. Ranum
+Note: i write it only when i think it's important.
 
 1. Introduction
 What is Computer Science
@@ -7,4 +8,17 @@ Ilmu Komputer adalah studi tentang masalah, pemecahan masalah, solusi dan masala
 Algoritma adalah pemecahan masalah dengan langkah terbatas.
 Computable adalah jika masalah memiliki algoritma.
 Interface adalah tampilan fungsi untuk mencapai tujuan.
-Client vs Engineer
+Programming adalah mengimplementasikan algoritma ke dalam kode.
+All data items in the computer are represented as strings of binary digits.
+To manage the complexity of problems and problem-solving process, we focus on big picture without getting lose in the detail.
+Abstract data type is how we view the data and the operations that are allowed(what), not how they will be implement it.
+Information hiding is encapsulating the details of implementation to user's view.
+data structure is the implementation of abstract data type.
+two integers that divided, the results is floating point. try: type(4/2)
+in boolean relational operators(==,=!, <,> etc) and logical operators(and,or etc) can be combined.
+string are immuteable.
+set. <= ask whether all elements of the first set not in second.
+print(aku adalah,sep="++", end="++")
+print("aku adalah %s" % (var)). %=format operator s=collection of value. (var) bisa diganti tuple atau dictionary.
+modifier: (-,+,0,.). contoh: %-20d, %20.2f
+
