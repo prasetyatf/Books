@@ -3,8 +3,16 @@ AI(ML(DL)).
 AI was born in 1950.
 Symbolic AI is large set of explicit rules for manipulating knowledge(1950-1980).
 Symbolic AI: input + algorythm = output.
-but is is still hard to solve problem like image classification, speech recognition, etc. soon Machine Learning
+but it is still hard to solve problem like image classification, speech recognition, etc. soon Machine Learning
 is taking symbolic AI's place.
 Machine Learning: input + output = algorhytm.
 ML become popular in 1990s where the availability of faster hardware and larger dataset.
 ML is relaed to statistic but it is differ, bcs ML deal with larger complex dataset and some classical statistic will become impractical.
+to do machine learning, we need three things: input, expected output, measure algorithm wheter doing good job
+the central problem of ML and DL is meaningfully transform data(learn different way to look at the data)
+ML models are all about finding appropriate representation (the different way to look at the data) for their input data.
+Learning, in the context of machine learning, describes an automatic search process for better representations.
+Example: the task “select all red pixels in the image” is simpler in the RG format, whereas “make the image less saturated” is simpler in the HSV format.
+Machine-learning algorithms aren’t usually creative in finding these transformations; they’re merely searching through a predefined set of operations, called a hypothesis space.
+
+...
