@@ -14,5 +14,6 @@ ML models are all about finding appropriate representation (the different way to
 Learning, in the context of machine learning, describes an automatic search process for better representations.
 Example: the task “select all red pixels in the image” is simpler in the RG format, whereas “make the image less saturated” is simpler in the HSV format.
 Machine-learning algorithms aren’t usually creative in finding these transformations; they’re merely searching through a predefined set of operations, called a hypothesis space.
-
+Deeplearning is layers that increasing representations for each layers.
+DL is inspired by human brain, but DL is not how human brain works. or a multistage way to learn data representations.
 ...
