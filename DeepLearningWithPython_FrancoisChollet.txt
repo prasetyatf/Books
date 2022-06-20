@@ -1,0 +1,10 @@
+1. What is deeplearning?
+AI(ML(DL)).
+AI was born in 1950.
+Symbolic AI is large set of explicit rules for manipulating knowledge(1950-1980).
+Symbolic AI: input + algorythm = output.
+but is is still hard to solve problem like image classification, speech recognition, etc. soon Machine Learning
+is taking symbolic AI's place.
+Machine Learning: input + output = algorhytm.
+ML become popular in 1990s where the availability of faster hardware and larger dataset.
+ML is relaed to statistic but it is differ, bcs ML deal with larger complex dataset and some classical statistic will become impractical.
