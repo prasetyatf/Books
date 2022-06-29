@@ -3,14 +3,18 @@ why use this book to do it? the book says that this is the only book that provid
 benefit of doubling as a “door stop”.
 SQL schema statements = Statements used to create database objects (tables, indexes, constraints, etc.).(usually for administrator)
 SQL data statements = The statements used to create, manipulate, and retrieve the data stored in a database.(usually for programmer or reporter).
+SQL transaction statements(covered in chap. 12)
 
 Chapt. 1. Alittle Background
 why database is better than phone book.
 nonrelational database
 before relational db, computerized dbs using various ways to store data like tree structure(hierarchial database system), network database system.
-In 1970, data be represented as sets of tables. Rather than using pointers to navigate between related entities, redundant data is used to link records in different tables.
+In 1970, data be represented as sets of tables. Rather than using pointers to navigate between related entities, redundant data is used to link records in different tables. said IBM papper.
 The number of rows that a table may contain is more a matter of physical limits(disk drive).
-Each table in a relational database includes information that uniquely identifies a row in that table (known as the primary key), along with additional information needed to describe the entity completely. 
+Primary Key = One or more columns that can be used as a unique identifier for each row in a table.
 primary key columns should never be allowed to change once a value has been assigned.
-a primary key consisting of two or more columns is known as a
-compound key
+Compound key = a Primary Key consisting of two or more columns.
+Foreign key = One or more columns that can be used together to identify a single row in another table.
+what is SQL? DSL/Alpha -> SQUARE -> SEQUEL -> SQL
+SQL:2006, focuses on the integration of SQL and XML and defines a language called XQuery which is used to query data in XML documents.
+SQL is not an acronym for anything (actually it's not “Structured Query Language”). but it's okay what people say.
