@@ -1,0 +1,5 @@
+why learn sql? writing applications, performing administrative tasks, or generating reports
+why use this book to do it? the book says that this is the only book that provides detailed coverage of the SQL language without the added-
+benefit of doubling as a “door stop”.
+SQL schema statements = Statements used to create database objects (tables, indexes, constraints, etc.).(usually for administrator)
+SQL data statements = The statements used to create, manipulate, and retrieve the data stored in a database.(usually for programmer or reporter).
