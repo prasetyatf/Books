@@ -18,3 +18,9 @@ Foreign key = One or more columns that can be used together to identify a single
 what is SQL? DSL/Alpha -> SQUARE -> SEQUEL -> SQL
 SQL:2006, focuses on the integration of SQL and XML and defines a language called XQuery which is used to query data in XML documents.
 SQL is not an acronym for anything (actually it's not “Structured Query Language”). but it's okay what people say.
+Procedural language(Python, Java, etc) defines both the desired results and the mechanism, or process, by which the results are generated.
+Nonprocedural languages(SQL) define the desired results, but the process by which the results are generated is left to a component of your database engine known as the optimizer.
+The optimizer’s job is to look at your SQL statements, taking into account how your tables are configured and what indexes are available, then decide execution path.
+Most database engine has optimizer hints(we can influence the optimizer’s decisions), but rarely used by most SQL user.
+SQL can combine to procedural language using API/toolkit.
+
