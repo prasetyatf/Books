@@ -23,4 +23,13 @@ Nonprocedural languages(SQL) define the desired results, but the process by whic
 The optimizer’s job is to look at your SQL statements, taking into account how your tables are configured and what indexes are available, then decide execution path.
 Most database engine has optimizer hints(we can influence the optimizer’s decisions), but rarely used by most SQL user.
 SQL can combine to procedural language using API/toolkit.
+Almost every query use 3 clauses:(be careful, if you are'nt put WHERE when delete row. you'll be delete the entire rows! :D)
+SELECT /*one or more things(/INSERT/DELETE/UPDATE)*/
+FROM /*one or more places*/
+WHERE /*one or more conditions to apply(filter)*/
+Ceate, Read, Update, Delete = INSERT, SELECT, UPDATE, DELETE
+All these database servers do approximately the same thing, although some are better equipped to run very large or very-high-throughput databases. Others are better at handling objects or very large files or XML documents, and so on.
+
+Chapter 2
+
 
