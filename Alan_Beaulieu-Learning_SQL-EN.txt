@@ -31,5 +31,9 @@ Ceate, Read, Update, Delete = INSERT, SELECT, UPDATE, DELETE
 All these database servers do approximately the same thing, although some are better equipped to run very large or very-high-throughput databases. Others are better at handling objects or very large files or XML documents, and so on.
 
 Chapter 2
-
+cmd> mysql -u root -p (execute mysql with enter uname and pwd)
+create user lrngsql with pwd xyz, and create database named bank
+import schema statement from external source. cmd> source "C:/LearninSQL.sql";
+mysql can perform single clause: cmd> SELECT now(); but other dbms might at least 2 clauses-
+(oracle database): SELECT now() FROM dual;
 
