@@ -36,4 +36,9 @@ create user lrngsql with pwd xyz, and create database named bank
 import schema statement from external source. cmd> source "C:/LearninSQL.sql";
 mysql can perform single clause: cmd> SELECT now(); but other dbms might at least 2 clauses-
 (oracle database): SELECT now() FROM dual;
-
+this book will use character(char/varchar), numeric, and date datatype.
+char: fixed-length strings are right-padded with spaces and always consume-
+the same number of bytes, max length 255 bytes, use the it when all strings to be stored in the column are of the same length(such as state abbreviations).
+varchar: not right-padded with spaces and don’t always consume the same number of bytes,
+varchar columns can be up to 65,535 bytes, use it when char in the column are varying lenghts.
+Both char and varchar are used in a similar fashion in all the major database servers.
