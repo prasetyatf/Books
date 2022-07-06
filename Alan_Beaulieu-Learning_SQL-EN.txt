@@ -39,6 +39,8 @@ mysql can perform single clause: cmd> SELECT now(); but other dbms might at leas
 this book will use character(char/varchar), numeric, and date datatype.
 char: fixed-length strings are right-padded with spaces and always consume-
 the same number of bytes, max length 255 bytes, use the it when all strings to be stored in the column are of the same length(such as state abbreviations).
+
+text data
 varchar: not right-padded with spaces and don’t always consume the same number of bytes,
 varchar columns can be up to 65,535 bytes, use it when char in the column are varying lenghts.
 Both char and varchar are used in a similar fashion in all the major database servers.
@@ -71,5 +73,19 @@ used, although this limit may be increased if necessary.
 for large character data, whereas DB2 and Oracle use a data type called clob, for
 Character Large Object.
 • Now that MySQL allows up to 65,535 bytes for varchar columns (it was limited
-to 255 bytes in version 4), there isn’t any particular need to use the tinytext or
-text type
+to 255 bytes in version 4), there isn’t any particular need to use the tinytext or text type
+
+Numeric data
+Numeric are used for:
+Boolean(1: True, 0:False)
+Primary key(generally starts at 1 and increase in increment)
+Customer shopping basket(positive numbers)
+High-precision scientific or manufacturing data(comonly requires high accuracy to eight decimal points)
+
+MySQL integer types
+Type | Signed range | Unsigned range
+Tinyint | −128 to 127 | 0 to 255
+Smallint | −32,768 to 32,767 | 0 to 65,535
+Mediumint | −8,388,608 to 8,388,607 | 0 to 16,777,215
+Int | −2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295
+Bigint | −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615
