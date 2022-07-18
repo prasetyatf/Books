@@ -9,7 +9,8 @@ Chapt. 1. Alittle Background
 why database is better than phone book.
 nonrelational database
 before relational db, computerized dbs using various ways to store data like tree structure(hierarchial database system), network database system.
-In 1970, data be represented as sets of tables. Rather than using pointers to navigate between related entities, redundant data is used to link records in different tables. said IBM papper.
+In 1970, data be represented as sets of tables. Rather than using pointers to navigate between related entities, 
+-redundant data is used to link records in different tables. said IBM papper.
 The number of rows that a table may contain is more a matter of physical limits(disk drive).
 Primary Key = One or more columns that can be used as a unique identifier for each row in a table.
 primary key columns should never be allowed to change once a value has been assigned.
@@ -28,7 +29,8 @@ SELECT /*one or more things(/INSERT/DELETE/UPDATE)*/
 FROM /*one or more places*/
 WHERE /*one or more conditions to apply(filter)*/
 Ceate, Read, Update, Delete = INSERT, SELECT, UPDATE, DELETE
-All these database servers do approximately the same thing, although some are better equipped to run very large or very-high-throughput databases. Others are better at handling objects or very large files or XML documents, and so on.
+All these database servers do approximately the same thing, although some are better equipped to run very large or very-high-throughput databases. 
+-Others are better at handling objects or very large files or XML documents, and so on.
 
 Chapter 2
 cmd> mysql -u root -p (execute mysql with enter uname and pwd)
