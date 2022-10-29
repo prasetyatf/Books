@@ -3,7 +3,20 @@ Chapter 5: Model Evaluation & Improvement
 ...
 Evaluation Metrics & Scoring
 ...it is important to choose the right metric when selecting between models and adjusting parameters.
+
 Keep The End Goal In Mind
 not just making a prediction but using these predictions as part of a larger decisionmaking process
 business metric = Before picking a machine learning metric, you should think about the high-level goal of the application.
-business impact = The consequences of choosing a particular algorithm for a machine learning application
+business impact = The consequences of choosing a particular algorithm for a machine learning application.
+In the early stages of development, and for adjusting parameters, it is often infeasible-
+to put models into production just for testing purposes, because of the high business or personal risks that can be involved.
+
+Metrics for Binary Classification
+Kinds of Error
+Often, accuracy is not a good measure of predictive performance, as the number of-
+mistakes we make does not contain all the information we are interested in. 
+For any application, we need to ask ourselves what the consequences of these mistakes might be in the real world.
+false positive / type I error: Incorrect positive prediction -> a healthy guy detected has a cancer
+false negative / type II error: Incorrect negative prediction -> a guy with cancer detected as healthy guy
+Imbalanced datasets
+Confusion matrices
