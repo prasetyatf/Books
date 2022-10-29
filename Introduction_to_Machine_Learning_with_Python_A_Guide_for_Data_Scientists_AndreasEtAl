@@ -1,4 +1,8 @@
-...
+Chapter 2: Supervised Learning
+Classification and Regression
+y = Class/Categoric var -> binary classification / multiclass classification
+y = Numeric
+
 Chapter 5: Model Evaluation & Improvement
 ...
 Evaluation Metrics & Scoring
@@ -20,3 +24,6 @@ false positive / type I error: Incorrect positive prediction -> a healthy guy de
 false negative / type II error: Incorrect negative prediction -> a guy with cancer detected as healthy guy
 Imbalanced datasets
 Confusion matrices
+
+...
+Chapter 6: Algorithm Chains and Pipelines
