@@ -1,0 +1,9 @@
+...
+Chapter 5: Model Evaluation & Improvement
+...
+Evaluation Metrics & Scoring
+...it is important to choose the right metric when selecting between models and adjusting parameters.
+Keep The End Goal In Mind
+not just making a prediction but using these predictions as part of a larger decisionmaking process
+business metric = Before picking a machine learning metric, you should think about the high-level goal of the application.
+business impact = The consequences of choosing a particular algorithm for a machine learning application
