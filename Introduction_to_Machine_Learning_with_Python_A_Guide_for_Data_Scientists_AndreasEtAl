@@ -9,6 +9,10 @@ obtain a model that works well on the training set but is not able to generalize
 Underfitting = Choosing too simple a model that not be able to capture all the aspects of and vari‐
 ability in the data, and your model will do badly even on the training set.
 Relation of Model Complexity to Dataset Size
+Never underestimate the power of more data.
+the larger variety of data points your dataset contains, the more complex a model you can use without overfitting.
+In the real world, you often have the ability to decide how much data to collect(but not duplicating same data points
+or collecting very similiar data points), which might be more beneficial than tweaking and tuning your model. 
 
 
 Chapter 5: Model Evaluation & Improvement
