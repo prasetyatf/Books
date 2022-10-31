@@ -18,6 +18,17 @@ low-dimensional datasets = few features. vice versa
 inspecting algorithms on low-dimensional datasets can be very instructive.
 ...
 --Decision Tree
+Essentially, they learn a hierarchy of if/else questions, leading to a decision.
+the splitting process happen on tree while it devide data points into two part by a line on 2D graph.
+a leaf on a tree means region on graph.
+a metrices on tree means data points composition.
+A leaf of the tree that contains data points that all share the same target value is called pure.
+A prediction on a new data point is made by checking which region of the partition of the feature space-
+the point lies in, and then predicting the majority target (or the single target in the case of pure leaves)-
+in that region.(classification -> mode)
+trees for regression tasks, To make a prediction, we traverse the tree based on the tests in each node and find
+the leaf the new data point falls into. The output for this data point is the mean target of the training points
+in this leaf.(regression -> mean)
 
 Chapter 5: Model Evaluation & Improvement
 ...
