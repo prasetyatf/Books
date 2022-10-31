@@ -38,6 +38,17 @@ Common strategies to prevent overfitting:
 pre-prunning = stopping the creation of the tree early.(can use sklearn)
 post-pruning(pruning) = building the tree but then removing or collapsing nodes that contain little information.
 (can't use sklearn).
+--Analyzing Decision Tree
+for each nodes, there is:
+feature = on root node, its indicate most importance feature(check using feature importance)
+samples = its shows datapoint on the region
+values = metrices that contain sum of each datapoints based on class
+class = dominant datapoints
+--Feautures Importance
+the most importance feature should be the feature of root node.
+f a feature has a low feature_importance, it doesn’t mean that this feature is uninformative.-
+It only means that the feature was not picked by the tree, likely because another feature encodes the same information.
+
 
 Chapter 5: Model Evaluation & Improvement
 ...
