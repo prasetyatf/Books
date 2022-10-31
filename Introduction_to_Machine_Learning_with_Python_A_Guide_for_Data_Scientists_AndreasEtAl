@@ -29,6 +29,15 @@ in that region.(classification -> mode)
 trees for regression tasks, To make a prediction, we traverse the tree based on the tests in each node and find
 the leaf the new data point falls into. The output for this data point is the mean target of the training points
 in this leaf.(regression -> mean)
+--Controlling complexity of decision trees
+building a tree means continuing until all leaves are pure leads to models that are very complex and-
+highly overfit to the training data.
+pure leaf means a tree 100% accurate on training set.
+decision boundary focuses a lot on single outlier points that are far away from the other points in that class.
+Common strategies to prevent overfitting:
+pre-prunning = stopping the creation of the tree early.(can use sklearn)
+post-pruning(pruning) = building the tree but then removing or collapsing nodes that contain little information.
+(can't use sklearn).
 
 Chapter 5: Model Evaluation & Improvement
 ...
