@@ -20,9 +20,9 @@ inspecting algorithms on low-dimensional datasets can be very instructive.
 --Decision Tree
 Essentially, they learn a hierarchy of if/else questions, leading to a decision.
 the splitting process happen on tree while it devide data points into two part by a line on 2D graph.
-a leaf on a tree means region on graph.
+a leaf/node on a tree means region on graph.
 a metrices on tree means data points composition.
-A leaf of the tree that contains data points that all share the same target value is called pure.
+A leaf/node of the tree that contains data points that all share the same target value is called pure.
 A prediction on a new data point is made by checking which region of the partition of the feature space-
 the point lies in, and then predicting the majority target (or the single target in the case of pure leaves)-
 in that region.(classification -> mode)
@@ -48,7 +48,17 @@ class = dominant datapoints
 the most importance feature should be the feature of root node.
 f a feature has a low feature_importance, it doesn’t mean that this feature is uninformative.-
 It only means that the feature was not picked by the tree, likely because another feature encodes the same information.
-
+--forecast: DecisionTreeRegressor vs LinaeRegression
+the linear model doing well on training data and test data, while tree model only good on training data.
+--Strengths, Weakness, Parameters
+pre-pruning: max_depth, max_leaf_nodes, or min_samples_leaf
+adventages: visualized model easily understood, simple preprocessing(no need standarization, normalization),-
+work well when you have features that are on completely different scales, or a mix of binary and con‐
+tinuous features.
+disadventages: even with the use of pre-pruning, they tend to overfit and provide poor generalization performance.
+--Ensemble of Decision Tree
+Ensembles = methods that combine multiple machine learning models to create more powerful models.
+Ensemble Decision tree: random forests and gradient boosted decision trees.
 
 Chapter 5: Model Evaluation & Improvement
 ...
