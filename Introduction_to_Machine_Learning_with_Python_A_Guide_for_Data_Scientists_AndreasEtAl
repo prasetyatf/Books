@@ -72,7 +72,7 @@ Chapter 5: Model Evaluation & Improvement
 Cross validation
 Cross Validation = scenario of splitting dataset(multiple splitting dataset)
 benefit: evading lucky/unlucky effect, knowing how sensitive our model is to the selection of the training dataset-
-(acuracy range), using more fold means we able tu use portion of training set.
+(acuracy range), using more fold means we able tO use more portion of training set.
 disadventage: computational cost.
 Stratified k-fold
 When data is ordered, its not wise using ordinary splitting. 
