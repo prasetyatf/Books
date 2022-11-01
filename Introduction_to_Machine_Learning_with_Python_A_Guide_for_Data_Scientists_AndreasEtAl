@@ -87,7 +87,18 @@ not suitable for large dataset.
 ...
 (there is many strategies actually)
 Grid Search
-
+is trying all possible combinations of the parameters of interest.
+--Simple Grid Search
+we tried combining parameters and select best acuracy.
+--The Danger of Overfitting the Parameters and the Validation Set
+we need an independent set for evaluating parameters
+we have three sets: 
+the training set to build the model, 
+the validation (or development) set to select the parameters of the model, 
+and the test set to evaluate the performance of the selected parameters.
+--Grid Search With Cross Val
+many people use the term cross-validation colloquially to refer to grid search with cross-validation.
+code: from sklearn.model_selection import GridSearchCV(READ MORE SOON!!)
 
 Evaluation Metrics & Scoring
 ...it is important to choose the right metric when selecting between models and adjusting parameters.
