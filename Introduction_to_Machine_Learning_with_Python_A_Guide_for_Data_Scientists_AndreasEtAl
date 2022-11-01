@@ -59,6 +59,9 @@ disadventages: even with the use of pre-pruning, they tend to overfit and provid
 --Ensemble of Decision Tree
 Ensembles = methods that combine multiple machine learning models to create more powerful models.
 Ensemble Decision tree: random forests and gradient boosted decision trees.
+...
+--Uncertainty Estimates from Classifiers
+
 
 Chapter 5: Model Evaluation & Improvement
 ...
