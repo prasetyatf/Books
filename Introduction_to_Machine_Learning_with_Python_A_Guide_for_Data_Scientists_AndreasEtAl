@@ -61,7 +61,11 @@ Ensembles = methods that combine multiple machine learning models to create more
 Ensemble Decision tree: random forests and gradient boosted decision trees.
 ...
 --Uncertainty Estimates from Classifiers
-
+In high-risk applications of machine learning, it is important to detect when the system is-
+uncertain and can be mistaken. ex: false negative on cancer patient can lead to serious health problem.
+sklearn: decision_function and predict_proba. most models have it, many have one of them.
+gbrt.decision_function(X_test).shape --> the shape of decisison funtcion model(binary classification)
+...
 
 Chapter 5: Model Evaluation & Improvement
 ...
