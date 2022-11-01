@@ -69,6 +69,26 @@ gbrt.decision_function(X_test).shape --> the shape of decisison funtcion model(b
 
 Chapter 5: Model Evaluation & Improvement
 ...
+Cross validation
+Cross Validation = scenario of splitting dataset(multiple splitting dataset)
+benefit: evading lucky/unlucky effect, knowing how sensitive our model is to the selection of the training dataset-
+(acuracy range), using more fold means we able tu use portion of training set.
+disadventage: computational cost.
+Stratified k-fold
+When data is ordered, its not wise using ordinary splitting. 
+ex: data ordered = 0,0,1,1,2,2. train =0,0,1,1. test = 2,2
+--More control over cros val
+For most use cases, the defaults of k-fold crossvalidation for regression and stratified k-fold for classification 
+work well, but there are some cases where you might want to use a different strategy.
+if shuffle is true then fix the random_state
+--Leave-one-out cross val
+each fold is a single sample. For each split, you pick a single data point to be the test set.
+not suitable for large dataset.
+...
+(there is many strategies actually)
+Grid Search
+
+
 Evaluation Metrics & Scoring
 ...it is important to choose the right metric when selecting between models and adjusting parameters.
 
