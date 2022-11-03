@@ -110,7 +110,14 @@ Fitting the GridSearchCV object not only searches for the best parameters, but a
 automatically fits a new model on the whole training dataset with the parameters that yielded the-
 best cross-validation performance.
 i think the gridsearchcv does automatically splitting dataset to validation set in the background.
-
+-- Analyzing the result of cross-validation
+i think its necessary only when we want to know yhe proccess behind it.
+--Search over spaces that are not grids
+be careful to tunning all possible parameters, bcs some parameters is conditional.
+like parameters in SVM, if kernel='linear', then only parameter C is used.
+To deal with these kinds of “conditional” parameters in SVM we can use:
+param_grid = [{'kernel': ['rbf'], 'C': [0.001, 0.01, 0.1, 1, 10, 100], 'gamma': [0.001, 0.01, 0.1, 1, 10, 100]},
+ {'kernel': ['linear'], 'C': [0.001, 0.01, 0.1, 1, 10, 100]}]
 Evaluation Metrics & Scoring
 ...it is important to choose the right metric when selecting between models and adjusting parameters.
 
