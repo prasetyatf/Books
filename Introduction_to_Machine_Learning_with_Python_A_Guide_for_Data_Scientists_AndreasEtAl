@@ -98,7 +98,18 @@ the validation (or development) set to select the parameters of the model,
 and the test set to evaluate the performance of the selected parameters.
 --Grid Search With Cross Val
 many people use the term cross-validation colloquially to refer to grid search with cross-validation.
-code: from sklearn.model_selection import GridSearchCV(READ MORE SOON!!)
+common steps:
+from sklearn.model_selection import GridSearchCV
+specify the parameters you want to search over using a dictionary
+set the parameters of gridsearch
+split dataset to training set and test set
+fit
+score. btw, score is simple way to perform predict and acuracy_score.
+best_params_ showing the best parameters. i suggest read more methodes, its very usefull.
+Fitting the GridSearchCV object not only searches for the best parameters, but also
+automatically fits a new model on the whole training dataset with the parameters that yielded the-
+best cross-validation performance.
+i think the gridsearchcv does automatically splitting dataset to validation set in the background.
 
 Evaluation Metrics & Scoring
 ...it is important to choose the right metric when selecting between models and adjusting parameters.
