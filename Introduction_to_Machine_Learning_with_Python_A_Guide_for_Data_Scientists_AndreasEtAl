@@ -141,6 +141,27 @@ this book is trying to predict imbalanced class with DummyClassifier and compare
 DecTree & LogReg has moare accuracy than dummy, but its non sense, we need metric to asses the model.
 It is a classifier model that makes predictions without trying to find patterns in the data(source: towardatascience)
 --Confusion matrices
+its the most comprehensive ways to represent the result of evaluating binary classification.
+the ouput: 2x2 metrices(array)
+the rows = true classes
+the columns = predicted classes
+[[TN, FP],
+[FN, TP]]
+this book is trying to compare confusion matrix for each Most Freq Class, Dummy Model, DecTree, LogReg.
+1.Most freq class  2.Dummy model  3.Decision Tree  4.Logistic Regression
+[[403 0]           [[361 42]      [[390 13]        [[402 8]
+[47 0]              [43 4]]       [24 23]]         [8 39]]
+1. something is wrong with pred_most_frequent, because it always predicts the same class. 
+2. pred_dummy, on the other hand, has a very small number of true positives (4), particularly compared to
+the number of false negatives and false positives—there are many more false positives than true positives!
+3. The predictions made by the decision tree make much more
+sense than the dummy predictions, even though the accuracy was nearly the same.
+4. we can see that logistic regression does better than pred_tree in all aspects: it
+has more true positives and true negatives while having fewer false positives and false negatives. 
+my opiniion, look at the main diagonal, if its score better than the others, then its better.
+--Relation to accuracy
+--Precision, recall, and f-score.
+
 
 ...
 Chapter 6: Algorithm Chains and Pipelines
