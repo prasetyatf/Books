@@ -168,12 +168,19 @@ Accuracy = TP+TN / TP+TN+FP+FN
 -Precision
 Precision(positive predictive value (PPV)) = TP /TP+FP
 Precision is used as a performance metric when the goal is to limit the number of false positives.
+(In drug testing, Positive is that the drug is effective in treating the disease)
 -Recall
 Recall(sensitivity, hit rate, or true positive rate (TPR))= TP / TP+FN
+(In cancer diagnosis, negative is that the people is healthy, so FN is wrong prediction about people are not sick)
 Recall is used as performance metric when we need to identify all positive samples.
-There is a trade-off between optimizing recall and optimizing precision.
+-There is a trade-off between optimizing recall and optimizing precision.
 In the machine learning community, precision and recall are arguably the most commonly used
 measures for binary classification, but other communities might use other related metrics.
+-f-score or f-measure
+F = 2 x ((precision x recall) / (precision + recall))
+adventages: a better measure than accuracy on imbalanced binary classification datasets, we summarized the 
+predictive performance again in one number
+disadventages: it is harder to interpret and explain than accuracy
 
 ...
 Chapter 6: Algorithm Chains and Pipelines
