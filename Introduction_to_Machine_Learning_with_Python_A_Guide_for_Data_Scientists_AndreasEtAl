@@ -136,9 +136,10 @@ For any application, we need to ask ourselves what the consequences of these mis
 false positive / type I error: Incorrect positive prediction -> a healthy guy detected has a cancer
 false negative / type II error: Incorrect negative prediction -> a guy with cancer detected as healthy guy
 --Imbalanced datasets
-one of two classes is much more frequent than the other one.
+one of two(many) classes is much more frequent than the other one.
 this book is trying to predict imbalanced class with DummyClassifier and compare it using DecTree & LogReg,
-DecTree & LogReg has moare accuracy than dummy, but its non sense, we need metric to asses the model.
+DecTree & LogReg has moare accuracy than dummy, but only using accuracy is inadequate for imbalanced dataset
+, we need metric to asses the model.
 It is a classifier model that makes predictions without trying to find patterns in the data(source: towardatascience)
 --Confusion matrices
 its the most comprehensive ways to represent the result of evaluating binary classification.
