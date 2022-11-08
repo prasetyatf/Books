@@ -76,7 +76,7 @@ benefit: evading lucky/unlucky effect, knowing how sensitive our model is to the
 disadventage: computational cost.
 Stratified k-fold
 When data is ordered, its not wise using ordinary splitting. 
-ex: data ordered = 0,0,1,1,2,2. train =0,0,1,1. test = 2,2
+ex: ordered data = 0,0,1,1,2,2. train =0,0,1,1. test = 2,2
 --More control over cros val
 For most use cases, the defaults of k-fold crossvalidation for regression and stratified k-fold for classification 
 work well, but there are some cases where you might want to use a different strategy.
@@ -111,7 +111,7 @@ automatically fits a new model on the whole training dataset with the parameters
 best cross-validation performance.
 i think the gridsearchcv does automatically splitting dataset to validation set in the background.
 -- Analyzing the result of cross-validation
-i think its necessary only when we want to know yhe proccess behind it.
+i think its necessary only when we want to know the proccess behind it.
 --Search over spaces that are not grids
 be careful to tunning all possible parameters, bcs some parameters is conditional.
 like parameters in SVM, if kernel='linear', then only parameter C is used.
@@ -152,17 +152,28 @@ this book is trying to compare confusion matrix for each Most Freq Class, Dummy 
 1.Most freq class  2.Dummy model  3.Decision Tree  4.Logistic Regression
 [[403 0]           [[361 42]      [[390 13]        [[402 8]
 [47 0]              [43 4]]       [24 23]]         [8 39]]
-1. something is wrong with pred_most_frequent, because it always predicts the same class. 
+1. something is wrong with pred_most_frequent, because it always predicts the same class(negative class in this case).
 2. pred_dummy, on the other hand, has a very small number of true positives (4), particularly compared to
 the number of false negatives and false positives—there are many more false positives than true positives!
-3. The predictions made by the decision tree make much more
-sense than the dummy predictions, even though the accuracy was nearly the same.
+3. The predictions made by the decision tree make much more sense than the dummy predictions, 
+even though the accuracy was nearly the same.
 4. we can see that logistic regression does better than pred_tree in all aspects: it
 has more true positives and true negatives while having fewer false positives and false negatives. 
-my opiniion, look at the main diagonal, if its score better than the others, then its better.
+my opiniion, look at the main diagonal, if its score better than the others, then its better.(True is correct prediction)
+We can summerize confusion metric with things below:
 --Relation to accuracy
+-Accuracy
+Accuracy = TP+TN / TP+TN+FP+FN
 --Precision, recall, and f-score.
-
+-Precision
+Precision(positive predictive value (PPV)) = TP /TP+FP
+Precision is used as a performance metric when the goal is to limit the number of false positives.
+-Recall
+Recall(sensitivity, hit rate, or true positive rate (TPR))= TP / TP+FN
+Recall is used as performance metric when we need to identify all positive samples.
+There is a trade-off between optimizing recall and optimizing precision.
+In the machine learning community, precision and recall are arguably the most commonly used
+measures for binary classification, but other communities might use other related metrics.
 
 ...
 Chapter 6: Algorithm Chains and Pipelines
