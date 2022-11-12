@@ -87,6 +87,14 @@ regression model and the decision tree make exactly the same predictions.
 conclusion: Binning features generally has no beneficial effect for tree-based models, but
 the linear model benefited greatly in expressiveness from the transformation of the data.
 --Interactions and Polynomials
+Another way to enrich a feature representation for linear models
+...
+--Univariate Nonlinear Transformations
+...
+--Automatic Feature Selection
+adding more features increases the chance of overfitting.
+There are three basic strategies to choose only good features: univariate statistics, 
+model-based selection, and iterative selection. (All of it are supervised learning models)
 
 
 Chapter 5: Model Evaluation & Improvement
