@@ -78,6 +78,15 @@ check uniqueness -> .value_cunts()
 pd.get_dummies() to encode string
 sklearn OneHotEncoder to encode int(its categorical integer)
 --Binning, Discretization, Linear Models, and Trees
+Each of all models have very different properties when it comes to how they work with different-
+feature representations.
+this book compare Linear Regression vs Decision Tree, from the graph LinReg shows straight line and DecTree shows
+better line. Then we try to binning data for the two models then compare it.
+Yje graph shows DecTree and LinReg are exactly on top of each other, meaning the linear
+regression model and the decision tree make exactly the same predictions.
+conclusion: Binning features generally has no beneficial effect for tree-based models, but
+the linear model benefited greatly in expressiveness from the transformation of the data.
+--Interactions and Polynomials
 
 
 Chapter 5: Model Evaluation & Improvement
