@@ -67,6 +67,19 @@ sklearn: decision_function and predict_proba. most models have it, many have one
 gbrt.decision_function(X_test).shape --> the shape of decisison funtcion model(binary classification)
 ...
 
+Chapter 4: Representing data and Engineering Features
+Regardless of the types of features your data consists of, how you represent them can have an enormous-
+effect on the performance of machine learning models.
+Feature Engineering = how to represent your data best for a particular application.
+--One-Hot-Encoding (Dummy Variables)
+The idea, replace each unique data points to each new features
+--Checking string-encoded categorical data
+check uniqueness -> .value_cunts()
+pd.get_dummies() to encode string
+sklearn OneHotEncoder to encode int(its categorical integer)
+--Binning, Discretization, Linear Models, and Trees
+
+
 Chapter 5: Model Evaluation & Improvement
 ...
 Cross validation
