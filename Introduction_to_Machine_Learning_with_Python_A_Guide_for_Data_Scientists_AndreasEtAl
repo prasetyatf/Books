@@ -211,6 +211,11 @@ F = 2 x ((precision x recall) / (precision + recall))
 adventages: a better measure than accuracy on imbalanced binary classification datasets, we summarized the 
 predictive performance again in one number
 disadventages: it is harder to interpret and explain than accuracy
+This book is trying to compare accuracy report for each most freq, dummy model, LogReg, Dectree.
+for most freq and dummy model, it has good average at precision, recall, f score. but, it has bad accuracy
+at precision, recall, and f score at some class. while, we can see, LogReg has better accuracy at the whole accuracy-
+report.
+tips: look at average accuracy then look at accuracy for each class.
 
 ...
 Chapter 6: Algorithm Chains and Pipelines
