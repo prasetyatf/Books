@@ -1,5 +1,11 @@
 ...
 Chapter 2: Choosing an effective visual
-Verbal System: Simple Text, Tabular, Heatmap(mix with visual)
-Visual System: Heatmap(mix with visual), Graph(points, lines, bars, and area)
+--Verbal System: Simple Text, Tabular, Heatmap(mix with visual)
+--Visual System: Heatmap(mix with visual), Graph(points, lines, bars, and area)
 visual system is faster processing information than verbal system
+my opinion based on how many datas to show, if 1-3 datas to show, we could use simple text. 
+>3 datas to show, we use bar chart. many datas to show, we use tabular/heat map.
+in this book, chart=graph
+--Scatterplots can be useful for showing the relationship between two things.
+--Line graphs are most commonly used to plot continuous data(days,months etc.). There is line graph and slope graph.
+--Line Graph can show a single series of data, or multiple series. Be consistent in the time points you plot
