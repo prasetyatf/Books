@@ -32,4 +32,7 @@ useful if your category names are long
 --Stacked horizontal bar chart
 ...
 --Area
-The writer avoids it, except when he needs to visualize numbers of vastly different magnitudes
+The writer avoids it, except when he needs to visualize numbers of vastly different magnitudes.
+--Other chart
+...
+--Avoid pie charts, donut charts, 3D, and secondary y‐axes
