@@ -4,7 +4,7 @@ Chapter 2: Choosing an effective visual
 --Visual System: Heatmap(mix with visual), Graph(points, lines, bars, and area)
 visual system is faster processing information than verbal system
 my opinion based on how many datas to show, if 1-3 datas to show, we could use simple text. 
->3 datas to show, we use bar chart. many datas to show, we use tabular/heat map.
+>3 datas to show, we use bar chart. many datas to show, we use tabular/heat map or bar chart with multiple series.
 in this book, chart=graph
 --Scatterplots can be useful for showing the relationship between two things.
 --Line graphs are most commonly used to plot continuous data(days,months etc.). There is line graph and slope graph.
@@ -23,7 +23,13 @@ You don’t want the bars to be so wide, however, that your audience wants to co
 bar charts can be single series, or multiple series. more series is more complex.
 --Vertical bar chart
 Be aware, there is visual grouping that happens as a result of the spacing in bar charts having more than one data series.
+--Waterfall chart
+to show a starting point, increases and decreases, and the resulting ending point.
 --Stacked vertical bar chart
 It is hard to compare the subcomponents across the various categories once you get beyond the bottom series.
 --Horizontal bar chart
 useful if your category names are long
+--Stacked horizontal bar chart
+...
+--Area
+The writer avoids it, except when he needs to visualize numbers of vastly different magnitudes
