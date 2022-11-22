@@ -9,3 +9,21 @@ in this book, chart=graph
 --Scatterplots can be useful for showing the relationship between two things.
 --Line graphs are most commonly used to plot continuous data(days,months etc.). There is line graph and slope graph.
 --Line Graph can show a single series of data, or multiple series. Be consistent in the time points you plot
+-- Slopegraphs can be useful when you have two time periods or points of comparison and want to quickly-
+show relative increases and decreases.
+...our attention is drawn immediately to the decrease in “Career development,”(the orange) while-
+the rest of the data(the grey) is preserved for context without competing for attention.(discuss in Chapter 4)
+--Bar Chart is easy to read and its common.
+Our eyes compare the end points of the bars, so it is easy to see quickly which category is the-
+biggest, which is the smallest, and also the incremental difference between categories.
+bar charts always have a zero baseline (where the x‐axis crosses the y‐axis at zero),-
+otherwise you get a false visual comparison.
+There’s no hard‐and‐fast rule here, but in general the bars should be wider than the white space between the bars.
+You don’t want the bars to be so wide, however, that your audience wants to compare areas instead of lengths.
+bar charts can be single series, or multiple series. more series is more complex.
+--Vertical bar chart
+Be aware, there is visual grouping that happens as a result of the spacing in bar charts having more than one data series.
+--Stacked vertical bar chart
+It is hard to compare the subcomponents across the various categories once you get beyond the bottom series.
+--Horizontal bar chart
+useful if your category names are long
