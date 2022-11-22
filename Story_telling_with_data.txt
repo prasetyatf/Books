@@ -1,0 +1,5 @@
+...
+Chapter 2: Choosing an effective visual
+Verbal System: Simple Text, Tabular, Heatmap(mix with visual)
+Visual System: Heatmap(mix with visual), Graph(points, lines, bars, and area)
+visual system is faster processing information than verbal system
