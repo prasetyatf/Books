@@ -36,3 +36,28 @@ The writer avoids it, except when he needs to visualize numbers of vastly differ
 --Other chart
 ...
 --Avoid pie charts, donut charts, 3D, and secondary y‐axes
+
+...
+Chapter 4: Focuse your audience's attention
+Understanding how people sees and how you can use that to your advantage when crafting visuals.
+Preattentive attribute
+First, preattentive attributes can be leveraged to help direct your audience’s attention to where you want-
+them to focus it. 
+Second, they can be used to create a visual hierarchy of elements to lead your audience through the information-
+you want
+to communicate in the way you want them to process it.
+--You see with your brain
+We dont fully see with eyes, but also some processing in brain called visual presception.
+--A brief lesson on memory
+Type of memory: iconic memory, short‐term memory, and long‐term memory.
+--Iconic memory
+its great efficiency of sight and speed of response. it is tuned to a set of preattentive attributes.
+we gained it through human evolutionary chain.
+--Short-term memory
+ people can keep about four chunks of visual information in their short‐term memory at a given time.
+ reducing that work of going back and forth between the legend and the data by leveraging the Gestalt principle-
+ of proximity.
+ --Long-term memory
+ When something leaves short‐term memory, it either lost forever or it passed to Long-term memory.
+ By combining the visual and verbal,we set ourselves up for success when it comes to triggering the formation-
+ of long‐term memories in our audience.
