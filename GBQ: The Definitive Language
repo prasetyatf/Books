@@ -1,0 +1,88 @@
+BAB 1
+Definisi
+Google BigQuery adalah data warehouse yang serverless dan scalable. SQL query dapat digunakan di sini. Hal yang dapat dilakukan SQL query: mendapatkan data, agregasi, filtering, grouping, dan sorting terhadap sebuah dataset maupun join dari beberapa dataset dengan sumber yang berbeda.
+Manfaat
+Google BigQuery: dapat menggunakan SQL, tidak perlu memiliki infrastuktur, seefisien menggunakan MapReduce.
+Google BigQuery dapat melakukan ETL pipeline seperti pada umumnya menggunakan Apache Spark. 
+Google BigQuery adalah SQL Engine sehingga dapat digunakan untuk BI tools(Tableau, Looker, Google Data Studio, dll).
+Data Studio adalah menu yang terdapat di interface yang digunakan untuk membuat visualisasi. 
+GBQ memiliki beberapa extension, salah satunya extension untuk Machine Learning, dengan training model tanpa perlu mengexport data keluar GBQ.
+Di Google BigQuery sudah terdapat dataset yang dapat kita querykan. Tidak perlu login, cukup masukkan query. Query ini menggunakan SQL:2011. Google BigQuery mampu untuk memproses data hingga lebih dari Gigabyte atau Petabyte secara cepat karena kemampuan scalabilitasnya dengan cara mendistrbusikan pemrosesan query ke banyak pekerja.
+Cara menggunakan:
+1.	Akses https://console.cloud.google.com/bigquery
+2.	Login 
+3.	Pilih proyek
+4.	Masukkan query
+
+BAB 2
+GBQ memiliki storage untuk structured data dan semi structured data dengan 4 dasar CRUD:
+Create: menambah data dengan INSERT
+Read: menerima/membaca data dengan SELECT
+Update: mengubah data dengan MERGE atau UPDATE. Note that GBQ is designed for analytic not for frequent update.
+Delete: menghapus data  dengan DELETE
+Membaca Data Dengan SELECT
+-- simple select
+SELECT
+  gender, tripduration
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+LIMIT 5
+Arti: pilih kolom gender dan tripduration pada table …new york city bike dengan batas display data sebanyak 5. LIMIT disini untuk membatasi display data bukan membatasi seberapa besar mesin berkerja. Semakin besar mesin berkerja maka semakin besar biaya yang dikeluarkan (cara optimisasi di Chapter 7).
+bigquery-public-data = project ID
+new_york_citibike = dataset
+citibike_trips = table
+
+Aliasing Coloumn Names With AS
+-- simple select
+SELECT
+  gender, tripduration as rental_duration
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+LIMIT 5
+
+Bisa juga begini
+-- simple select
+SELECT
+  gender, tripduration/60 as duration_minutes
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+LIMIT 5
+Jadi intinya alias tu kyak variable untuk menampung kolom atau operasi kolom.
+Filtering dengan WHERE
+WHERE dapat berkerja bersama operator logika, operator komparasi, dan evaluation order tapi tidak bisa menggunakan alias.
+Operator komparasi (<, >, =, <=, >=, tidak sama dengan???)
+-- simple select
+SELECT
+  gender, tripduration
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+WHERE tripduration < 600
+LIMIT 5
+Operator komparasi dan logika (AND, OR , NOT, XOR??)
+-- simple select
+SELECT
+  gender, tripduration
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+WHERE tripduration >= 300 AND tripduration < 600 AND gender = 'female'
+LIMIT 5
+Order of Evaluation (‘( )’)
+WHERE (tripduration < 600 AND gender = 'female') OR gender = 'male'
+Tidak dapat menggunakan alias
+SELECT
+  gender, tripduration / 60 AS minutes
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+WHERE minutes < 10  !!!INI TIDAK BISA YA!!!
+LIMIT 5
+
+Maka harus begini
+SELECT
+  gender, tripduration / 60 AS minutes
+FROM
+  `bigquery-public-data`.new_york_citibike.citibike_trips
+WHERE (tripduration / 60) < 10
+LIMIT 5
+
+Note: I skipped many tittles for quick understanding the basic sql
+
