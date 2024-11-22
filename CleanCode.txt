@@ -1,6 +1,9 @@
 Penamaan
 a. intention-reavealing name
-ketika kita membuat nama var, func, class, modul, dll haruslah menjawab pertanyaan apa, mengapa, bagaimana atau punya maksud. ketika nama membutuhkan komen untuk menjelaskan, berarti penamaan masih jelek. begitupula dengan penamaan implisit itu tidak lebih baik dari penamaan explisit. ubahlah nama kalau punya penamaan yang lebih baik. 
+ketika kita membuat nama var, func, class, modul, dll haruslah menjawab pertanyaan apa, mengapa, 
+bagaimana atau punya maksud. ketika nama membutuhkan komen untuk menjelaskan, berarti penamaan masih jelek.
+begitupula dengan penamaan implisit itu tidak lebih baik dari penamaan explisit. ubahlah nama kalau punya penamaan
+yang lebih baik. 
 b. avoid disinformation
 c. make meaningful distinction
 d. avoid mental mapping
