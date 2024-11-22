@@ -1,0 +1,23 @@
+Penamaan
+a. intention-reavealing name
+ketika kita membuat nama var, func, class, modul, dll haruslah menjawab pertanyaan apa, mengapa, bagaimana atau punya maksud. ketika nama membutuhkan komen untuk menjelaskan, berarti penamaan masih jelek. begitupula dengan penamaan implisit itu tidak lebih baik dari penamaan explisit. ubahlah nama kalau punya penamaan yang lebih baik. 
+b. avoid disinformation
+c. make meaningful distinction
+d. avoid mental mapping
+tulislah nama dimana orang lain dapat dengan mudah mencernanya, jangan karena untuk menunjukkan bahwa kamu pintar.
+e. nama Class biasanya menggunakan noun
+f. nama method biasanya menggunakan verb
+g. pick one word per concept
+gunakan nama yang konsisten dalam satu code base
+sisanya tdk terlalu penting krn sudah biasa digunakan atau belum saya baca/pahami
+4 yg blm sy pahami
+
+Penulisan function
+a. Sebuah Function harus kecil
+penulisan function harus sangat kecil, dia tdk boleh lebih dr 1 layar/lebih dari 100 baris kode, tp sbenernya standarnya tdk jelas, jadi intinya lebih kecil lebih baik
+Block & indenting
+sebaiknya dalam sebuah blok dia menampung tdk lebih dari dua indentation. dlm blok if/for/dll sebaiknya 1 baris, yaitu utk calling funct, misalnya.
+b. Do one thing
+satu function melakukan satu hal. satu hal artinya satu abstraksi.  atau bbrp elemen kode dlm sebuah function seharusnya saling bekerjasama utk hanya melakukan sesuai dg nama functionnya. coba anggap def/function adl kata To dan bbrp kode di dalamnya menjelaskan cara To getData() misal.
+pahami lg one level of abstraction
+APA YG DIMAKSUD ABSTRACTION
